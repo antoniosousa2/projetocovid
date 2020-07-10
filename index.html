@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MAPEAMENTO DOS CASOS DE CORONAVIRUS (COVID-19) DE CIDADES DE MATO GROSSO DO SUL</title>
+    <meta name="twitter:image" content="assets/img/logo-branca.png?h=a89d30dd1f808acd07eec20f4d7c0845">
+    <meta name="twitter:description" content="A proposta visa oferecer apoio técnico aos municípios que desejarem e que possuam dados passíveis de sistematização em ambiente de Sistema de Informações Geográficas - SIG para mapeamento e espacialização dos casos de coronavírus (COVID-19) no âmbito da cidade. Assim como, a disponibilização dos dados espaciais em plataforma online-grátis de geovisualização visa contribuir com a tomada de decisões a partir da distribuição espacial dos casos de covid-19 confirmados, dos leitos hospitalares e da organização dos fluxos para as unidades de referência e de contra-referência.
+
+">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta name="description" content="A proposta visa oferecer apoio técnico aos municípios que desejarem e que possuam dados passíveis de sistematização em ambiente de Sistema de Informações Geográficas - SIG para mapeamento e espacialização dos casos de coronavírus (COVID-19) no âmbito da cidade. Assim como, a disponibilização dos dados espaciais em plataforma online-grátis de geovisualização visa contribuir com a tomada de decisões a partir da distribuição espacial dos casos de covid-19 confirmados, dos leitos hospitalares e da organização dos fluxos para as unidades de referência e de contra-referência.
+
+">
+    <meta property="og:image" content="assets/img/covid19.jpg?h=ff3a1ea2dfb3b19283db9df3411ca28e">
+    <meta name="twitter:title" content="MAPEAMENTO DOS CASOS DE CORONAVIRUS (COVID-19) DE CIDADES DE MATO GROSSO DO SUL">
+    <link rel="icon" type="image/png" sizes="36x36" href="assets/img/android-icon-36x36.png?h=4f83b554380308efcbe355a7c1410745">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/android-icon-48x48.png?h=77472becbe8260f6113b0eec4840c280">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo-gesf2.png?h=1970f1a5460fe5ca58b5dc979a98c862">
+    <link rel="icon" type="image/png" sizes="72x72" href="assets/img/logo-gesf.png?h=88a58d3ca29795364834a1d50c22be76">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json?h=7f8d4aee43d40e68a4bf66c913b1bf70">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=add25ac77ab9f1064c3b03542ccfd8d4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="text-center">
+    <header></header>
+    <!-- Start: 1 Row 1 Column -->
+    <div>
+        <div class="container" style="margin-left: -5px;">
+            <div class="row">
+                <div class="col-md-12 text-left" style="height: 85px;"><img style="margin-right: 8px;width: 70px;" src="assets/img/logo-projeto-90.png?h=241d0d94a505a174a9bcc105f486a863">
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: 1 Row 1 Column -->
+    <header>
+        <div class="d-xl-flex justify-content-xl-start" style="color: rgb(44,171,95);background-color: rgb(46,184,76);width: 100%;">
+            <!-- Start: Navigation Clean -->
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(46,184,76);">
+                <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="margin-top: -10px;width: 1110px;">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="color: rgb(255,255,255);">HOME</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#sobre" style="color: rgb(255,255,255);">SOBRE</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="equipe.html" style="color: rgb(255,255,255);">EQUIPE</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#cidadesatendidas" style="color: rgb(255,255,255);">CIDADES ATENDIDAS&nbsp;</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link border-primary shadow-sm" href="#mapasms" style="color: rgb(255,255,255);font-size: 16PX;">MAPAS CIDADES DE MS</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="contato.html" style="color: rgb(255,255,255);">CONTATO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End: Navigation Clean -->
+        </div>
+    </header>
+    <div class="text-center d-inline-flex d-xl-flex flex-row-reverse justify-content-center align-items-center mx-auto justify-content-xl-center align-items-xl-center">
+        <!-- Start: br Tag --><br>
+        <!-- End: br Tag --><span class="text-center d-sm-flex d-xl-flex justify-content-center align-items-center align-content-center align-items-sm-center justify-content-xl-center align-items-xl-center" style="font-size: 27px;font-family: ARIAL;"><br><strong>REDE DE GEÓGRAF@S PARA SAÚDE</strong><br><br></span></div>
+    <div
+        class="text-center d-xl-flex justify-content-xl-center align-items-xl-center">
+        <!-- Start: divider-text-middle -->
+        <div style="text-align:center;"></div>
+        <!-- End: divider-text-middle --><img src="assets/img/logo-ufgd.jpg?h=0d0dd0d1b401cde147b91e5e9cac2a5b" style="width: 90px;height: 60px;"><img src="assets/img/logo-gesf2.png?h=1970f1a5460fe5ca58b5dc979a98c862" style="width: 60px;height: 50px;"><img src="assets/img/logo-geo-bacha.jpg?h=1247c0fb2adc4849b18d6263a8c0a1a8" style="width: 60px;height: 60px;"><img src="assets/img/logo-proex.jpg?h=b81d311fbf10484868ccfad49cf25a43" style="width: 80px;height: 48px;">
+        <img
+            src="assets/img/logo-branca.png?h=a89d30dd1f808acd07eec20f4d7c0845" style="width: 60px;"></div>
+            <!-- Start: br Tag --><br>
+            <!-- End: br Tag -->
+            <!-- Start: Customizable Carousel (swipe enabled) -->
+            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                <!-- Start: Slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- Start: Slide -->
+                    <div class="carousel-item active"><img class="d-block w-100" alt="Slide Image" src="assets/img/slide-pagina-inicial/covid19.jpg?h=7df28e78e4d4f6a82a544cfa16aad4cc"></div>
+                    <!-- End: Slide -->
+                    <!-- Start: Slide -->
+                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/slide-pagina-inicial/logo-ufgdvida.jpeg?h=5369dc755ca640742d6aa4acfab8f23e"></div>
+                    <!-- End: Slide -->
+                    <!-- Start: Slide -->
+                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/slide-pagina-inicial/ufgd.jpg?h=73eaf2dd094b5cc6d2600387bc9ade92"></div>
+                    <!-- End: Slide -->
+                </div>
+                <!-- End: Slides -->
+                <!-- Start: Controls -->
+                <div>
+                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                    <!-- End: Previous -->
+                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                    <!-- End: Next -->
+                </div>
+                <!-- End: Controls -->
+                <!-- Start: Indicators -->
+                <ul class="carousel-indicators" role="">
+                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                </ul>
+                <!-- End: Indicators -->
+            </div>
+            <!-- End: Customizable Carousel (swipe enabled) -->
+            <!-- Start: best carousel slide -->
+            <section id="carousel"></section>
+            <!-- End: best carousel slide -->
+            <!-- Start: br Tag --><br>
+            <!-- End: br Tag -->
+            <!-- Start: Highlight Blue -->
+            <div id="sobre" class="highlight-blue" style="background-color: rgb(46,184,76);">
+                <div class="container" style="color: rgb(255,255,255);font-family: Arial ;">
+                    <!-- Start: Intro -->
+                    <div class="intro">
+                        <h2 class="text-center" style="font-family: Arial ;">SOBRE</h2>
+                        <p class="text-center" style="font-family: Arial;color: rgba(247,247,247,0.7);"><br>A proposta visa oferecer apoio técnico aos municípios que desejarem e que possuam dados passíveis de sistematização em ambiente de Sistema de Informações Geográficas - SIG para mapeamento e espacialização dos casos de coronavírus
+                            (COVID-19) no âmbito da cidade. Assim como, a disponibilização dos dados espaciais em plataforma online-grátis de geovisualização visa contribuir com a tomada de decisões a partir da distribuição espacial dos casos de covid-19
+                            confirmados, dos leitos hospitalares e da organização dos fluxos para as unidades de referência e de contra-referência.<br><br></p>
+                    </div>
+                    <!-- End: Intro -->
+                    <!-- Start: Buttons -->
+                    <div class="buttons"></div>
+                    <!-- End: Buttons -->
+                </div>
+            </div>
+            <!-- End: Highlight Blue -->
+            <!-- Start: Article Clean -->
+            <div class="article-clean">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                            <!-- Start: Intro -->
+                            <div class="intro">
+                                <h2 class="text-center" id="alerta">MAPA DA COVID-19 EM 05 JUN. 2020</h2>
+                                <!-- Start: Date and Author -->
+                                <p class="text-center"><span class="by">by</span> <a href="#">Prof. Adeir Archanjo da Mota (Geografia/ FCH/ UFGD)</a></p>
+                                <!-- End: Date and Author --><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fprojetoextmapeamentocovid-19ufgd.netlify.app%2F&amp;layout=standard&amp;action=like&amp;size=small" scrolling="no" frameborder="0" allowtransparency="true"
+                                    allow="encrypted-media" width="450" height="80"></iframe><img class="img-fluid" src="assets/img/alerta06-06.jpg?h=8f2db120bc3826ad21926e248fe8f0f7"></div>
+                            <!-- End: Intro -->
+                            <!-- Start: OmEleAlertHideAndShowFixed2 -->
+                            <div></div>
+                            <!-- End: OmEleAlertHideAndShowFixed2 -->
+                            <!-- Start: Text -->
+                            <div class="text"></div>
+                            <!-- End: Text --><p style="text-align:  justify;">Mato Grosso do Sul soma 1997 casos confirmados de SARS-CoV-2 (COVID-19), conforme a publicação da Secretaria Estadual de Saúde de Mato Grosso do Sul, a maioria concentrado nos municípios com as maiores concentrações populacionais.
+Uma análise geográfica permite identificar os agrupamentos de municípios com as maiores quantidades e taxas. Destacam-se aqui dois agrupamentos entre os dez municípios com as maiores taxas de contaminação:
+    Dourados* e municípios adjacentes somam 845 casos registrados.</p><p style="text-align:  justify;"> O agrupamento de municípios de Dourados (8º), Douradina (2º), Fátima do Sul (3º), Vicentina (4º), Itaporã (5º) e Rio Brilhante (7º) concentra mais de 42% dos casos confirmados no estado.</p><p style="text-align:  justify;">
+Cluster Guia Lopes da Laguna (1º), Bonito (6º) e Jardim (10º), este agrupamento concentra mais de 16% dos casos registrados.</p></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Article Clean -->
+            <hr>
+            <!-- Start: 1 Row 1 Column -->
+            <div>
+                <h2 id="mapasms" style="color: rgb(0,0,0);font-family: &quot;Arial black&quot;;"><br><strong>ESPACIALIDADE DOS CASOS CONFIRMADOS DE COVID-19 EM MATO GROSSO DO SUL</strong><br><br></h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" data-aos="fade-up">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel" style="margin-left: 0px;">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/covid_MS_22abr-GIF.gif?h=712f9b0ffdd6424cb477f250198eb8a6" style="width: 800px;"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <hr>
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: 1 Row 1 Column -->
+            <!-- Start: Article Clean -->
+            <div class="article-clean">
+                <h2 style="color: rgb(0,0,0);font-family: &quot;Arial black&quot;;"><br><strong>ESPACIALIDADE DOS CASOS CONFIRMADOS DE COVID-19 EM MATO GROSSO DO SUL</strong><br><br></h2>
+                <div class="container" style="width: auto;">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img data-aos="fade-up" class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/covid-23_abril.jpg?h=e8c69b72c1911b99a21f4ce5be278751"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/distri-respiradores.jpg?h=5b34fb333ac8c8e6d87d08e88e63c399"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/popula-infantil.jpg?h=9ec44a907459e395eb78101e8deeb016"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/red-saude.jpg?h=d3802a155e7e069fc097b5357f1cfa55"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/mapa-09-05.jpg?h=4d4147b62391d7775c2e3b403fa622df"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/mapas-archanjo/mapa-09-05.jpg?h=4d4147b62391d7775c2e3b403fa622df"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/leito-utiEclinico.jpg?h=5bb1161b71351039f32a76ff478e5484"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                </div>
+                <h2 style="color: rgb(0,0,0);font-family: &quot;Arial black&quot;;"><br><strong>AGRUPAMENTOS MUNICIPAIS DA COVID-19 EM MATO GROSSO DO SUL</strong><br><br></h2>
+                <!-- Start: br Tag --><br>
+                <!-- End: br Tag -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img data-aos="fade-up" class="d-block w-100" alt="Slide Image" src="assets/img/agrupamentos-municipais2.jpg?h=9a07ab6f102d6d888a6db86e147ae052"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2 data-aos="fade-up" id="divulgacao-eventos" style="color: rgb(0,0,0);font-family: &quot;Arial black&quot;;">DIVULGAÇÃO E EVENTOS</h2>
+                <!-- Start: br Tag --><br>
+                <!-- End: br Tag -->
+                <!-- Start: card-3-column-animation-shadows-images -->
+                <section>
+                    <div class="container">
+                        <div class="row" data-aos="fade-up">
+                            <div class="col-auto col-sm-12 col-md-12 col-lg-4 col-xl-4 offset-xl-2" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
+                                <div class="bg-light border rounded shadow card" data-bs-hover-animate="pulse"><img class="card-img-top" src="assets/img/geo-saudeufgds2.png?h=ee412bba7fe3cdd72696a122dedfb4d8">
+                                    <div class="card-body">
+                                        <h4 class="text-center card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Matéria no site da UFGD, destacando o papel da Geografia da Saúde e do servidor público no enfrentamento a pandemia da COVID-19<br></h4>
+                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p>
+                                        <!-- Start: Lorem1 --><p id="lorem">Os profissionais da área da saúde têm desempenhado um protagonismo ímpar nas ações de combate à pandemia ocasionada pela covid-19, doença provocada pelo novo coronavírus e que tem impactado serviços assistenciais em todo o mundo. (<b>Leia mais</b>)
+</p>
+                                        <!-- End: Lorem1 --><a class="btn btn-outline-success" role="button" style="font-weight: normal;font-family: Antic, sans-serif;" href="https://portal.ufgd.edu.br/noticias/geografia-da-saude-professor-da-ufgd-fala-sobre-relevancia-da-area-no-enfrentamento-a-covid-19">&nbsp;<i class="icon-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-12 col-lg-4 col-xl-4 offset-xl-1" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;margin-right: 0px;margin-bottom: 0px;">
+                                <div class="bg-light border rounded shadow card" data-bs-hover-animate="pulse"><img class="card-img-top" src="assets/img/geo-saudeufgds.png?h=b7f361c25f6fff5c75b2b16dbcde0dea">
+                                    <div class="card-body">
+                                        <h4 class="text-center card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Projeto Mapeamento da COVID-19 em municípios de Mato Grosso do Sul<br></h4>
+                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p>
+                                        <!-- Start: Lorem1 --><p id="lorem">Um grupo de pesquisadores ligados ao curso de Geografia da UFGD está trabalhando para produzir mapas que ajudem as pessoas a identificar visualmente os casos de coronavírus no Estado. (<b>Leia mais</b>)</p>
+                                        <!-- End: Lorem1 --><a class="btn btn-outline-success" role="button" style="font-weight: normal;font-family: Antic, sans-serif;" href="https://portal.ufgd.edu.br/noticias/acao-da-ufgd-procura-fazer-mapas-para-ajudar-municipios-contra-a-covid-19">&nbsp;<i class="icon-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End: card-3-column-animation-shadows-images -->
+                <!-- Start: Dynamically Queue Videos -->
+                <div class="container-fluid" id="dqv">
+                    <div class="row d-xl-flex justify-content-xl-center" data-aos="fade-up">
+                        <div class="col-sm-8 col-md-7 col-lg-6">
+                            <div id="video-placeholder"><img class="img-fluid" src="assets/img/entrevistaa.png?h=935ccd65e9efd1d058a84656ccf338e3"></div>
+                            <div class="row">
+                                <div class="col-sm-7 col-md-6 col-lg-6 controls"><i class="material-icons" id="prev">skip_previous</i><i class="material-icons" id="pause">pause</i><i class="material-icons" id="play">play_arrow</i><i class="material-icons" id="next">skip_next</i><i class="material-icons"
+                                        id="mute-toggle">volume_up</i><input type="range" id="volume-input" class="dqv-range vol" min="0" max="100" step="1">
+                                    <div>
+                                        <div class="dqv-range dur"><span id="current-time">0:00</span><span> / </span><span id="duration">0:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 col-md-6 col-lg-6 controls"><input type="range" id="progress-bar" class="dqv-range prog" value="0"></div>
+                                <div class="col-md-12"><select class="form-control-sm d-none" id="speed"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2">
+                            <div class="row">
+                                <div class="col-sm-10 col-md-10 col-lg-12 vids"><img class="img-fluid thumbnail" data-video-id="uk7_GP05dMQ" src="assets/img/entrevistaa.png?h=935ccd65e9efd1d058a84656ccf338e3"><img class="img-fluid thumbnail" data-video-id="mV6VIfrBmc0" src="assets/img/entrevista-rit.png?h=69650c53c1bb3f42f09b062053b5069f"><img class="img-fluid thumbnail" data-video-id="xv9dsclztV0"
+                                        src="assets/img/video-ufmt.png?h=6e91595783fbef3852f2d9fc70f7960f"><img class="img-fluid thumbnail" data-video-id="jhJU83RrzPE" src="assets/img/derlian2.png?h=4925940e1b483ba3d4fb30025a8df03a"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Dynamically Queue Videos -->
+                <hr>
+                <div class="container" style="background-color: #fffcf6;">
+                    <div class="row">
+                        <div class="col-xl-4 d-xl-flex align-items-xl-center">
+                            <p class="text-justify"><br>Projetos, atividades e comunicação do Grupo de Pesquisa GESF Saúde,Espaço e Fronteira(s):<br><br></p>
+                        </div>
+                        <div class="col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center">
+                            <div style="margin-top: 20px;"><img src="assets/img/logo-facebook2.png?h=b5c1011ca1c9f3c72ffb05f3968bd17c" style="width: 70px;height: 70px;">
+                                <div style="margin-top: -10px;color: rgb(0,0,0);">
+                                    <h5 class="text-primary" style="margin-bottom: 0;color: rgb(0,0,0);background-color: rgba(72,24,24,0);font-family: Arial black;"><br><a href="https://www.facebook.com/groups/grupodepesquisaGESF">Página Oficial - GESF</a><br><br></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center">
+                            <!-- Start: br Tag --><br>
+                            <!-- End: br Tag -->
+                            <div style="margin-top: 30px;"><img src="assets/img/gesf-cnpq2.jpg?h=328e7501f407d2f6be0b20d6405957d1" style="width: 190px;height: 70px;">
+                                <div style="margin-top: -10px;color: rgb(0,0,0);">
+                                    <h5 style="margin-bottom: 0;color: rgb(0,0,0);background-color: rgba(72,24,24,0);font-family: Arial black;margin-top: -30px;"><br><br><a href="http://dgp.cnpq.br/dgp/espelhogrupo/3417231547461574">GRUPOS DE PESQUISA - CNPq</a><br><br><br></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Start: Bold BS 4 Four Column Portfolio Layout -->
+                <div class="container" data-aos="fade-up">
+                    <h3 id="cidadesatendidas" class="my-4" style="color: rgb(0,0,0);font-family: Arial black;">CIDADES ATENDIDAS</h3>
+                    <div class="row text-center d-sm-flex d-md-flex d-xl-flex justify-content-sm-center justify-content-md-center justify-content-xl-center align-items-xl-center" data-aos="fade-up" data-aos-duration="150">
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card h-100"><a href="#"><img class="img-fluid" src="assets/img/640px-Bandeira_Batayporã.png?h=ac9150e3902d280d1d92da36bd0852a9" style="height: 181.047px;max-width: 100%;width: 255px;"></a>
+                                <div class="card-body">
+                                    <a class="card-link" href="bataypora.html">
+                                        <h5 class="card-title" style="color: rgb(0,0,0);">Batayporã-MS</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-duration="150">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img class="d-block w-100" alt="Slide Image" src="assets/img/60-69esBat.jpeg?h=a9c2984cc998fb936034f722bdec6a5c">
+                                        <!-- Start: br Tag --><br>
+                                        <!-- End: br Tag -->
+                                    </div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/bata-quanti.jpeg?h=0f03015e1fbcd041c71ee26798f331e2"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/bata-tipo.jpeg?h=0b489a0e9c0c2c94cf650142e1122216"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/90anos%20Bat.jpeg?h=bf8c952fa3b9faf18745966eb5bbf76f"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <div class="row text-center d-sm-flex d-md-flex d-xl-flex justify-content-sm-center justify-content-md-center justify-content-xl-center align-items-xl-center" data-aos="fade-up" data-aos-duration="150">
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card h-100"><a href="#"><img class="img-fluid" src="assets/img/bandeira-cassilandia.jpg?h=288867ffa35db4aee90b59595323d106" style="height: 181.047px;max-width: 100%;width: 255px;"></a>
+                                <div class="card-body">
+                                    <a class="card-link" href="cassilandia.html">
+                                        <h5 class="card-title" style="color: rgb(0,0,0);">Cassilândia-MS</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-duration="150">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img class="d-block w-100" alt="Slide Image" src="assets/img/60%20a%2069%20anos.jpeg?h=bff67ce49e0ec0e68b8f8a0fe14c6eb4"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/90-anos.jpeg?h=8bb8833a6c9f669334cfd3895226d741"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85-anos.jpeg?h=8883ab679cbae2e9f3712c7ef10e1ab1"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/70-anos.jpeg?h=9f1dff050e7eb3e974ad595886df477f"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <div class="row text-center d-sm-flex d-md-flex d-xl-flex justify-content-sm-center justify-content-md-center justify-content-xl-center align-items-xl-center" data-aos="fade-up" data-aos-duration="150">
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card h-100"><a href="#"><img class="img-fluid" src="assets/img/bandeira-chapadao.gif?h=c476e4a96d8a962989cd6bbecbdb646f" style="height: 181.047px;max-width: 100%;width: 255px;"></a>
+                                <div class="card-body">
+                                    <a class="card-link" href="chapadao.html">
+                                        <h5 class="card-title" style="color: rgb(0,0,0);">Chapadão do Sul-MS</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-duration="150">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img class="d-block w-100" alt="Slide Image" src="assets/img/60-69es.jpeg?h=64b0f29d2103116a6d7ff06af6a8b985"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85anos-chap.jpeg?h=665acd9af219596aef92c3fb3a367eb3"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/70_porCh.jpeg?h=06b3c3050d39d7e1cd4e0fd7772a353a"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85chap.jpeg?h=1fdc4f33dd98e50153e379e1204d7d46"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/casos-confirmados_28-05-2020.jpeg?h=71e130279af5fb20210ba5afce878d94"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/28-05-2020.jpeg?h=1c39bb4234e0d4be077b6e122f3d4015"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/30-05-2020.jpeg?h=3f8fb8e11c4aaf5b8cae421d3d98d711"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/31-05-2020-comRecuperados.jpeg?h=1f700da9642193737f0c185e2ea3e96e"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <!-- Start: br Tag --><br>
+                    <!-- End: br Tag -->
+                    <div class="row text-center d-sm-flex d-md-flex d-xl-flex justify-content-sm-center justify-content-md-center justify-content-xl-center align-items-xl-center" data-aos="fade-up" data-aos-duration="150">
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card h-100"><a href="#"><img class="img-fluid" src="assets/img/bandeira-jardim.jpg?h=d949033a5b7a96600d20d0f75005b063" style="height: 181.047px;max-width: 100%;width: 255px;"></a>
+                                <div class="card-body">
+                                    <a class="card-link" href="jardim.html">
+                                        <h5 class="card-title" style="color: rgb(0,0,0);">Jardim-MS</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-duration="150">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"><img class="d-block w-100" alt="Slide Image" src="assets/img/90anosjar.jpeg?h=b81773d080c60f91989d45647fa1fae5"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85anosjar.jpeg?h=a6aef7bbde369a64fac394c2c63ce1bd"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/est-6069jar.jpeg?h=24dff8df17d202b7e4c9edce7b1a431f"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85anosjar.jpeg?h=a6aef7bbde369a64fac394c2c63ce1bd"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                    <div class="row text-center d-sm-flex d-md-flex d-xl-flex justify-content-sm-center justify-content-md-center justify-content-xl-center align-items-xl-center" data-aos="fade-up" data-aos-duration="150">
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card h-100"><a href="#"><img class="img-fluid" src="assets/img/4633205ded552154cc0c9e13917d0ae6noticia_topo_v1_.jpg?h=cdc7d1cec53050009139fb3b6d609b32" style="height: 181.047px;max-width: 100%;width: 255px;"></a>
+                                <div class="card-body">
+                                    <a class="card-link" href="paranaiba.html">
+                                        <h5 class="card-title" style="color: rgb(0,0,0);">Paranaíba-MS</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" data-aos="fade-up" data-aos-duration="150">
+                            <!-- Start: Customizable Carousel (swipe enabled) -->
+                            <div id="Div_Promo_Carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Start: Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item active"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85anosjar.jpeg?h=a6aef7bbde369a64fac394c2c63ce1bd"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/est-6069jar.jpeg?h=24dff8df17d202b7e4c9edce7b1a431f"></div>
+                                    <!-- End: Slide -->
+                                    <!-- Start: Slide -->
+                                    <div class="carousel-item"><img class="d-block w-100" alt="Slide Image" src="assets/img/85anosjar.jpeg?h=a6aef7bbde369a64fac394c2c63ce1bd"></div>
+                                    <!-- End: Slide -->
+                                </div>
+                                <!-- End: Slides -->
+                                <!-- Start: Controls -->
+                                <div>
+                                    <!-- Start: Previous --><a class="carousel-control-prev" role="button" data-slide="prev" href="#Div_Promo_Carousel"> <span class="carousel-control-prev-icon" aria-hidden="true"> </span><span class="sr-only">Prev </span></a>
+                                    <!-- End: Previous -->
+                                    <!-- Start: Next --><a class="carousel-control-next" role="button" data-slide="next" href="#Div_Promo_Carousel"> <span class="carousel-control-next-icon" aria-hidden="true"> </span><span class="sr-only">Next </span></a>
+                                    <!-- End: Next -->
+                                </div>
+                                <!-- End: Controls -->
+                                <!-- Start: Indicators -->
+                                <ul class="carousel-indicators" role="">
+                                    <li class="active" data-slide-to="0" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="1" data-target="#Div_Promo_Carousel"></li>
+                                    <li data-slide-to="2" data-target="#Div_Promo_Carousel"></li>
+                                </ul>
+                                <!-- End: Indicators -->
+                            </div>
+                            <!-- End: Customizable Carousel (swipe enabled) -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Bold BS 4 Four Column Portfolio Layout -->
+                <!-- Start: Scroll To Top --><a id="scroll-to-top" title="Scroll to top" href="#"><i class="fas fa-angle-up"></i></a>
+                <!-- End: Scroll To Top -->
+                <!-- Start: Bold BS 4 Four Column Portfolio Layout -->
+                <div class="container" data-aos="fade-up">
+                    <h3 id="cidadesatendidas" class="my-4" style="color: rgb(0,0,0);font-family: Arial black;"></h3>
+                </div>
+                <!-- End: Bold BS 4 Four Column Portfolio Layout -->
+                <div class="container"></div>
+            </div>
+            <!-- End: Article Clean -->
+            <hr>
+            <!-- Start: Team Boxed -->
+            <div class="team-boxed"></div>
+            <!-- End: Team Boxed -->
+            <!-- Start: Team Boxed -->
+            <div class="team-boxed">
+                <div class="container">
+                    <!-- Start: Intro -->
+                    <div class="intro"></div>
+                    <!-- End: Intro -->
+                </div>
+            </div>
+            <!-- End: Team Boxed -->
+            <!-- Start: Footer Clean -->
+            <div class="footer-clean" style="background-color: rgb(29,180,44);">
+                <footer style="background-color: #1db42c;color: rgb(255,255,255);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- Start: Services -->
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>Site</h3>
+                                <ul>
+                                    <li><a href="index.html#sobre">Sobre</a></li>
+                                    <li><a href="index.html#cidadesatendidas">Cidades Atendidas</a></li>
+                                    <li><a href="equipe.html">Equipe</a></li>
+                                    <li><a href="contato.html">Contato</a></li>
+                                </ul>
+                            </div>
+                            <!-- End: Services -->
+                            <!-- Start: About -->
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>Secretarias de Saúde</h3>
+                                <ul>
+                                    <li><a href="http://www.bataypora.ms.gov.br/secretaria/saude">Batayporã-MS</a></li>
+                                    <li><a href="http://cassilandia.ms.gov.br/secretarias/">Cassilândia-MS</a></li>
+                                    <li><a href="http://www.chapadaodosul.ms.gov.br/secretaria-de-saude">Chapdão do Sul-MS</a></li>
+                                    <li><a href="http://jardim.ms.gov.br/secretarias/5_Secretaria-Municipal-de-Saude-.html">Jardim-MS</a></li>
+                                    <li><a href="http://paranaiba.ms.gov.br/site/secretarias-e-orgaos?id=39-saude">Paranaíba-MS</a></li>
+                                </ul>
+                            </div>
+                            <!-- End: About -->
+                            <!-- Start: Careers -->
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>UFGD</h3>
+                                <ul>
+                                    <li><a href="https://www.ufgd.edu.br/">Site Oficial</a></li>
+                                    <li><a href="https://www.ufgd.edu.br/secao/coronavirus/index">COVID-19</a></li>
+                                    <li><a href="https://www.ufgd.edu.br/cursos/geografia/index">Curso de Geografia</a></li>
+                                    <li><a href="https://www.ufgd.edu.br/pro-reitoria/proex/index">Proex</a></li>
+                                </ul>
+                            </div>
+                            <!-- End: Careers -->
+                            <!-- Start: Social Icons -->
+                            <div class="col-lg-3 item social"><a href="https://www.linkedin.com/in/antonio-id%C3%AArlian-pereira-de-sousa-0045b2196/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/antoniosousa2"><i class="icon ion-social-github"></i></a>
+                                <p class="copyright">Antonio Idêrlian Pereira de Sousa© 2020</p>
+                            </div>
+                            <!-- End: Social Icons -->
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- End: Footer Clean -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script src="assets/js/script.min.js?h=0ce1909468c83ceef1b95b240476c0b0"></script>
+</body>
+
+</html>

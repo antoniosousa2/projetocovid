@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MAPEAMENTO DOS CASOS DE CORONAVIRUS (COVID-19) DE CIDADES DE MATO GROSSO DO SUL</title>
+    <meta name="twitter:image" content="assets/img/logo-branca.png?h=a89d30dd1f808acd07eec20f4d7c0845">
+    <meta name="twitter:description" content="A proposta visa oferecer apoio técnico aos municípios que desejarem e que possuam dados passíveis de sistematização em ambiente de Sistema de Informações Geográficas - SIG para mapeamento e espacialização dos casos de coronavírus (COVID-19) no âmbito da cidade. Assim como, a disponibilização dos dados espaciais em plataforma online-grátis de geovisualização visa contribuir com a tomada de decisões a partir da distribuição espacial dos casos de covid-19 confirmados, dos leitos hospitalares e da organização dos fluxos para as unidades de referência e de contra-referência.
+
+">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta name="description" content="A proposta visa oferecer apoio técnico aos municípios que desejarem e que possuam dados passíveis de sistematização em ambiente de Sistema de Informações Geográficas - SIG para mapeamento e espacialização dos casos de coronavírus (COVID-19) no âmbito da cidade. Assim como, a disponibilização dos dados espaciais em plataforma online-grátis de geovisualização visa contribuir com a tomada de decisões a partir da distribuição espacial dos casos de covid-19 confirmados, dos leitos hospitalares e da organização dos fluxos para as unidades de referência e de contra-referência.
+
+">
+    <meta property="og:image" content="assets/img/covid19.jpg?h=ff3a1ea2dfb3b19283db9df3411ca28e">
+    <meta name="twitter:title" content="MAPEAMENTO DOS CASOS DE CORONAVIRUS (COVID-19) DE CIDADES DE MATO GROSSO DO SUL">
+    <link rel="icon" type="image/png" sizes="36x36" href="assets/img/android-icon-36x36.png?h=4f83b554380308efcbe355a7c1410745">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/android-icon-48x48.png?h=77472becbe8260f6113b0eec4840c280">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo-gesf2.png?h=1970f1a5460fe5ca58b5dc979a98c862">
+    <link rel="icon" type="image/png" sizes="72x72" href="assets/img/logo-gesf.png?h=88a58d3ca29795364834a1d50c22be76">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json?h=7f8d4aee43d40e68a4bf66c913b1bf70">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=2c0fc24b3d3038317dc51c05339856d0">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=add25ac77ab9f1064c3b03542ccfd8d4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="col-md-12 text-left" style="height: 85px;"><img style="margin-right: 8px;width: 70px;" src="assets/img/logo-projeto-90.png?h=241d0d94a505a174a9bcc105f486a863">
+        <!-- Start: br Tag --><br>
+        <!-- End: br Tag -->
+        <!-- Start: br Tag --><br>
+        <!-- End: br Tag -->
+    </div>
+    <header>
+        <div class="d-xl-flex justify-content-xl-start" style="width: 100%;color: rgb(44,171,95);background-color: rgb(46,184,76);">
+            <!-- Start: Navigation Clean -->
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(46,184,76);">
+                <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse text-center" id="navcol-1"
+                        style="margin-top: -10px;">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="color: rgb(255,255,255);">HOME</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#sobre" style="color: rgb(255,255,255);">SOBRE</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="equipe.html" style="color: rgb(255,255,255);">EQUIPE</a></li>
+                            <li class="nav-item" role="presentation"></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#cidadesatendidas" style="color: rgb(255,255,255);">CIDADES ATENDIDAS</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link border-primary shadow-sm" href="index.html#mapasms" style="color: rgb(255,255,255);font-size: 16PX;">MAPAS CIDADES DE MS</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="contato.html" style="color: rgb(255,255,255);">CONTATO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End: Navigation Clean -->
+        </div>
+    </header>
+    <div class="text-center d-inline-flex d-xl-flex flex-row-reverse justify-content-center align-items-center mx-auto justify-content-xl-center align-items-xl-center">
+        <!-- Start: br Tag --><br>
+        <!-- End: br Tag --><span class="text-center d-sm-flex d-xl-flex justify-content-center align-items-center align-content-center align-items-sm-center justify-content-xl-center align-items-xl-center" style="font-size: 27px;font-family: ARIAL;"><br><strong>REDE DE GEÓGRAF@S PARA SAÚDE</strong><br><br></span></div>
+    <div
+        class="text-center d-xl-flex justify-content-xl-center align-items-xl-center">
+        <!-- Start: divider-text-middle -->
+        <div style="text-align:center;"></div>
+        <!-- End: divider-text-middle --><img src="assets/img/logo-ufgd.jpg?h=0d0dd0d1b401cde147b91e5e9cac2a5b" style="width: 90px;height: 60px;"><img src="assets/img/logo-gesf2.png?h=1970f1a5460fe5ca58b5dc979a98c862" style="width: 60px;height: 50px;"><img src="assets/img/logo-geo-bacha.jpg?h=1247c0fb2adc4849b18d6263a8c0a1a8" style="width: 60px;height: 60px;"><img src="assets/img/logo-proex.jpg?h=b81d311fbf10484868ccfad49cf25a43" style="width: 70px;height: 48px;">
+        <img
+            src="assets/img/logo-branca.png?h=a89d30dd1f808acd07eec20f4d7c0845" style="width: 60px;"></div>
+            <!-- Start: br Tag --><br>
+            <!-- End: br Tag -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fprojetoextmapeamentocovid-19ufgd.netlify.app%2Fparanaiba&amp;layout=standard&amp;action=like&amp;size=small" scrolling="no" frameborder="0" allowtransparency="true"
+                            allow="encrypted-media" width="450" height="80"></iframe></div>
+                    <div class="col"><div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0" nonce="zSFxQU1T"></script>
+<div class="fb-share-button" data-href="https://projetoextmapeamentocovid-19ufgd.netlify.app/paranaiba" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprojetoextmapeamentocovid-19ufgd.netlify.app%2Fparanaiba&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div></div>
+                </div>
+            </div>
+            <h2 class="text-center" style="font-family: Arial black;"><br>MAPEAMENTO PARANAÍBA-MS<br><br></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 290px;">
+                        <div><img src="assets/img/4633205ded552154cc0c9e13917d0ae6noticia_topo_v1_.jpg?h=cdc7d1cec53050009139fb3b6d609b32" width="290px" style="margin-top: -23px;margin-left: 40px;"></div>
+                        <div></div>
+                    </div>
+                    <div class="col-xl-7">
+                        <h4 class="text-center">Sobre a cidade</h4>
+                        <p class="text-justify" style="margin-top: 9px;"><br>Município situado na divisa do Estado de Minas Gerais, Paranaiba possui grande quantidade de fazendas de gado de corte e de leitem, setor industrial em expansão e em pleno desenvolvimento.&nbsp;Paranaíba é uma cidade da Região
+                            Centro-Oeste do Brasil, localizado no estado de Mato Grosso do Sul. Fundada em 1838, Paranaíba teve importante papel na Guerra do Paraguai, pois foi rota de apoio logístico para a fuga dos civis envolvidos nesse conflito. A
+                            cidade é equidistante e a&nbsp;meio&nbsp;caminho entre a capital de MS e Uberlândia (MG) (dois importantes centros regionais e de serviços do Cerrado Brasileiro), ficando a pouco mais de 400km de distância de cada uma. É portanto
+                            um importante entreposto comercial para quem costuma transitar entre essas duas cidades.&nbsp;O município de Paranaíba está localizada no sul da região Centro-Oeste do Brasil, à Leste de Mato Grosso do Sul (Microrregião de
+                            Paranaíba).<br><br></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <h4 class="text-center"><br><strong>ESTIMATIVA POR SETOR CENSITÁRIO DE PESSOAS COM&nbsp; IDADE ENTRE 60 E 69 ANOS</strong><br><br></h4>
+            </div>
+            <div class="container">
+                <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center">
+                    <div class="col-xl-7" style="width: 655px;"><img src="assets/img/est-6069jar.jpeg?h=24dff8df17d202b7e4c9edce7b1a431f" style="width: 665px;height: 400pxpx;"></div>
+                    <div class="col-xl-5" style="width: 445px;">
+                        <p class="text-justify"><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a neque tristique, rutrum neque et, sodales lectus. Nulla vitae enim eu felis imperdiet sollicitudin. Morbi sed vestibulum lacus. Aliquam id scelerisque
+                            tellus. Donec fringilla sodales ultrices. Curabitur a enim molestie, imperdiet purus eu, blandit velit. Morbi pulvinar neque velit, id consectetur ante facilisis nec. Pellentesque non mi eu nisl suscipit gravida. Nullam condimentum
+                            mollis tincidunt. Suspendisse tempus convallis diam quis rhoncus. Cras rutrum commodo dictum. In ultricies sapien turpis, in feugiat ex maximus at. Integer sit amet velit eu erat commodo malesuada eu volutpat velit. Integer
+                            nec viverra urna. Maecenas erat nibh, elementum id finibus convallis, egestas et erat. Fusce tempor placerat purus, et euismod purus. Ut in ex nec lacus dictum condimentum. Nullam ante odio, lobortis a diam sit amet, porttitor
+                            elementum mi.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-center"><br><br><strong>ESPACIALIDADE POR SETOR CENSITÁRIO DE PESSOAS COM IDADE DE 70 ANOS</strong><br><br><br></h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 d-xl-flex justify-content-xl-center align-items-xl-center">
+                        <p class="text-justify"><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a neque tristique, rutrum neque et, sodales lectus. Nulla vitae enim eu felis imperdiet sollicitudin. Morbi sed vestibulum lacus. Aliquam id scelerisque
+                            tellus. Donec fringilla sodales ultrices. Curabitur a enim molestie, imperdiet purus eu, blandit velit. Morbi pulvinar neque velit, id consectetur ante facilisis nec. Pellentesque non mi eu nisl suscipit gravida. Nullam condimentum
+                            mollis tincidunt. Suspendisse tempus convallis diam quis rhoncus. Cras rutrum commodo dictum. In ultricies sapien turpis, in feugiat ex maximus at. Integer sit amet velit eu erat commodo malesuada eu volutpat velit. Integer
+                            nec viverra urna. Maecenas erat nibh, elementum id finibus convallis, egestas et erat. Fusce tempor placerat purus, et euismod purus. Ut in ex nec lacus dictum condimentum. Nullam ante odio, lobortis a diam sit amet, porttitor
+                            elementum mi.<br><br></p>
+                    </div>
+                    <div class="col"><img src="assets/img/70anojar.jpeg?h=26e35026044c79d8989800173eb364a0" style="width: 665px;height: 400pxpx;"></div>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-center"><br><strong>ESPACIALIDADE POR SETOR CENSITÁRIO DE PESSOAS COM IDADE DE 80 ANOS</strong><br><br></h4>
+            </div>
+            <div class="container">
+                <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center">
+                    <div class="col-xl-7" style="width: 655px;"><img src="assets/img/80anojar.jpeg?h=08746701ce6eac9d4430267297b95c2f" style="width: 665px;height: 400pxpx;"></div>
+                    <div class="col-xl-5" style="width: 445px;">
+                        <p class="text-justify"><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a neque tristique, rutrum neque et, sodales lectus. Nulla vitae enim eu felis imperdiet sollicitudin. Morbi sed vestibulum lacus. Aliquam id scelerisque
+                            tellus. Donec fringilla sodales ultrices. Curabitur a enim molestie, imperdiet purus eu, blandit velit. Morbi pulvinar neque velit, id consectetur ante facilisis nec. Pellentesque non mi eu nisl suscipit gravida. Nullam condimentum
+                            mollis tincidunt. Suspendisse tempus convallis diam quis rhoncus. Cras rutrum commodo dictum. In ultricies sapien turpis, in feugiat ex maximus at. Integer sit amet velit eu erat commodo malesuada eu volutpat velit. Integer
+                            nec viverra urna. Maecenas erat nibh, elementum id finibus convallis, egestas et erat. Fusce tempor placerat purus, et euismod purus. Ut in ex nec lacus dictum condimentum. Nullam ante odio, lobortis a diam sit amet, porttitor
+                            elementum mi.<br><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-center"><br><strong>ESPACIALIDADE POR SETOR CENSITÁRIO DE PESSOAS COM IDADE DE 85 ANOS</strong><br><br></h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 d-xl-flex justify-content-xl-center align-items-xl-center">
+                        <p class="text-justify"><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a neque tristique, rutrum neque et, sodales lectus. Nulla vitae enim eu felis imperdiet sollicitudin. Morbi sed vestibulum lacus. Aliquam id scelerisque
+                            tellus. Donec fringilla sodales ultrices. Curabitur a enim molestie, imperdiet purus eu, blandit velit. Morbi pulvinar neque velit, id consectetur ante facilisis nec. Pellentesque non mi eu nisl suscipit gravida. Nullam condimentum
+                            mollis tincidunt. Suspendisse tempus convallis diam quis rhoncus. Cras rutrum commodo dictum. In ultricies sapien turpis, in feugiat ex maximus at. Integer sit amet velit eu erat commodo malesuada eu volutpat velit. Integer
+                            nec viverra urna. Maecenas erat nibh, elementum id finibus convallis, egestas et erat. Fusce tempor placerat purus, et euismod purus. Ut in ex nec lacus dictum condimentum. Nullam ante odio, lobortis a diam sit amet, porttitor
+                            elementum mi.<br><br><br></p>
+                    </div>
+                    <div class="col"><img src="assets/img/85anosjar.jpeg?h=a6aef7bbde369a64fac394c2c63ce1bd" style="width: 665px;height: 400pxpx;"></div>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-center"><br><strong>ESPACIALIDADE POR SETOR CENSITÁRIO DE PESSOAS COM IDADE DE 90 ANOS</strong><br><br></h4>
+            </div>
+            <div class="container">
+                <div class="row text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="width: 6;">
+                    <div class="col-lg-10 col-xl-7" style="width: 655px;"><img src="assets/img/90anosjar.jpeg?h=b81773d080c60f91989d45647fa1fae5" style="width: 665px;height: 400pxpx;"></div>
+                    <div class="col-xl-5" style="width: 445px;">
+                        <p class="text-justify"><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a neque tristique, rutrum neque et, sodales lectus. Nulla vitae enim eu felis imperdiet sollicitudin. Morbi sed vestibulum lacus. Aliquam id scelerisque
+                            tellus. Donec fringilla sodales ultrices. Curabitur a enim molestie, imperdiet purus eu, blandit velit. Morbi pulvinar neque velit, id consectetur ante facilisis nec. Pellentesque non mi eu nisl suscipit gravida. Nullam condimentum
+                            mollis tincidunt. Suspendisse tempus convallis diam quis rhoncus. Cras rutrum commodo dictum. In ultricies sapien turpis, in feugiat ex maximus at. Integer sit amet velit eu erat commodo malesuada eu volutpat velit. Integer
+                            nec viverra urna. Maecenas erat nibh, elementum id finibus convallis, egestas et erat. Fusce tempor placerat purus, et euismod purus. Ut in ex nec lacus dictum condimentum. Nullam ante odio, lobortis a diam sit amet, porttitor
+                            elementum mi.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Start: br Tag --><br>
+            <!-- End: br Tag -->
+            <!-- Start: br Tag --><br>
+            <!-- End: br Tag -->
+            <!-- Start: Footer Clean -->
+            <div class="footer-clean" style="background-color: rgb(29,180,44);">
+                <!-- Start: Scroll To Top --><a id="scroll-to-top" title="Scroll to top" href="#"><i class="fas fa-angle-up"></i></a>
+                <!-- End: Scroll To Top -->
+                <footer style="background-color: #1db42c;color: rgb(255,255,255);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- Start: Services -->
+                            <div class="col-sm-4 col-md-3 text-center item">
+                                <h3>Site</h3>
+                                <ul>
+                                    <li><a href="index.html#sobre">Sobre</a></li>
+                                    <li><a href="index.html#cidadesatendidas">Cidades Atendidas</a></li>
+                                    <li><a href="equipe.html">Equipe</a></li>
+                                    <li><a href="contato.html">Contato</a></li>
+                                </ul>
+                            </div>
+                            <!-- End: Services -->
+                            <!-- Start: About -->
+                            <div class="col-sm-4 col-md-3 text-center item">
+                                <h3>Secretarias de Saúde</h3>
+                                <ul>
+                                    <li><a href="http://www.bataypora.ms.gov.br/secretaria/saude">Batayporã-MS</a></li>
+                                    <li><a href="http://cassilandia.ms.gov.br/secretarias/">Cassilândia-MS</a></li>
+                                    <li><a href="http://www.chapadaodosul.ms.gov.br/secretaria-de-saude">Chapdão do Sul-MS</a></li>
+                                    <li><a href="http://jardim.ms.gov.br/secretarias/5_Secretaria-Municipal-de-Saude-.html">Jardim-MS</a></li>
+                                    <li><a href="http://paranaiba.ms.gov.br/site/secretarias-e-orgaos?id=39-saude">Paranaíba-MS</a></li>
+                                </ul>
+                            </div>
+                            <!-- End: About -->
+                            <!-- Start: Careers -->
+                            <div class="col-sm-4 col-md-3 text-center item">
+                                <h3>UFGD</h3>
+                                <ul>
+                                    <li><a href="https://www.ufgd.edu.br/">Site Oficial</a></li>
+                                    <li><a href="https://www.ufgd.edu.br/secao/coronavirus/index">COVID-19</a></li>
+                                    <li><a href="https://www.ufgd.edu.br/cursos/geografia/index">Curso de Geografia</a></li>
+                                    <li><a href="https://www.ufgd.edu.br/pro-reitoria/proex/index">Proex</a></li>
+                                </ul>
+                            </div>
+                            <!-- End: Careers -->
+                            <!-- Start: Social Icons -->
+                            <div class="col-lg-3 item social"><a href="https://www.linkedin.com/in/antonio-id%C3%AArlian-pereira-de-sousa-0045b2196/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/antoniosousa2"><i class="icon ion-social-github"></i></a>
+                                <p class="copyright">Antonio Idêrlian Pereira de Sousa© 2020</p>
+                            </div>
+                            <!-- End: Social Icons -->
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- End: Footer Clean -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/smart-forms.min.js?h=2c0fc24b3d3038317dc51c05339856d0"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script src="assets/js/script.min.js?h=0ce1909468c83ceef1b95b240476c0b0"></script>
+</body>
+
+</html>
